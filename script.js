@@ -49,3 +49,19 @@ destination.pop()
 console.log(destination)
 
 // task:3
+let book =['c++','java','algorithm']
+console.log(book.includes('js'))
+
+// task:4
+let arr=[1,2,3,4,5]
+let names= 'isArray()';
+console.log(Array.isArray(arr)
+)
+console.log(Array.isArray(names)
+)
+// task:5
+
+let seasonal=['am', 'jam','lichu', 'tormuj']
+let non_seasonal=['lau', 'peyara', 'kola']
+let allFruits = seasonal.concat(non_seasonal)
+console.log(allFruits)
