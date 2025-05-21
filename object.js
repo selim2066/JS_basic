@@ -51,3 +51,11 @@ isStudent: true
 for(let i in myObject){
     console.log("key: " +i +" | "+"type: " +typeof myObject[i])
 }
+
+
+const x = ""
+if(!x.length){
+console.log("Hey")
+}else{
+console.log("Hi")
+}

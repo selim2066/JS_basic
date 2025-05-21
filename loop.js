@@ -5,4 +5,4 @@ for(let i=61; i<101; i++)
         console.log(i);
     }
 }
-
+ 
