@@ -62,7 +62,7 @@ let cap = "hi my name is selim reza";
 let newCap = "";
 
 for (let i in cap) {
-  if (i == 0 || cap[i-1] === " ") {
+  if (i == 0 || cap[i - 1] === " ") {
     newCap += cap[i].toUpperCase();
   } else {
     newCap += cap[i];
@@ -70,8 +70,8 @@ for (let i in cap) {
 }
 
 console.log(newCap);
-let words= cap.split(' ')
-for(let word in words){
-console.log(words[word])
+let words = cap.split(" ");
+for (let word in words) {
+  console.log(words[word]);
 }
-console.log(words)
+console.log(words);
