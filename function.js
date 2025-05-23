@@ -24,3 +24,4 @@ function age(year, month, date) {
 }
 age(2000, 4, 15);
 age(2000, 11, 29);
+age(1996,2,5);
