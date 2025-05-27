@@ -15,6 +15,35 @@ You are given an array of numbers. Count how many times the a number is repeated
 sample-input: numbers = [5,6,11,12,98, 5]*/
 
 numbers = [5, 6, 11, 12, 98, 5];
-function repeated(numbers){
-    
+function repeated(nums){
+    let rep={}
+    for(let i of nums)
+    {
+      if(rep[i]){
+        rep[i]++;
+      }else{
+        rep[i]=1;
+      }
+    }
+    console.log(rep)
 }
+repeated(numbers)
+
+/*
+ask-3:
+Write a function to count the number of vowels in a string.
+*/
+
+function vowelsCount(text){
+  let vowels = ["a", "e", "i", "o", "u"];
+  let count = 0;
+  for(let i of text)
+  {
+    if(vowels.includes(i)){
+      count++;
+    }
+  }
+  console.log("number of vowels in text is : \n"+count)
+}
+let txt="hi my name is selim"
+vowelsCount(txt)
