@@ -50,19 +50,23 @@ Write a function to find the longest word in a given string.
 */
 
 let text = "hi my name is MdSelimRezaIbnAL";
+let input = "I am learning Programming to become a programmer";
 function longestString(txt) {
   let tArray = txt.split(" ");
   let biggest = 0;
+  let longest = "";
   let word;
   for (word of tArray) {
     let size = word.length;
     if (size > biggest) {
       biggest = size;
+      longest = word;
     }
   }
-  console.log(word + " is the biggest word of the string");
+  console.log(longest + " is the biggest word of the string");
 }
 longestString(text);
+longestString(input);
 /* 
 sample-input: I am learning Programming to become a programmer
 
@@ -70,3 +74,12 @@ sample-output: Programming
 
 Task-5:
 Generate a random number between 10 to 20.*/
+function randomNum() {
+  let random = Math.floor(Math.random() * 20);
+  if (random < 10) {
+    console.log(random + 10);
+  } else {
+    console.log(random);
+  }
+}
+randomNum();
