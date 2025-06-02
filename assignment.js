@@ -92,10 +92,25 @@ calculateFinalScore({
   schoolGrade: 25,
   isFFamily: true,
 });
-calculateFinalScore("hiMyNameIs Selim")
-
+calculateFinalScore("hiMyNameIs Selim");
 
 /* Predict Avarage Waiting Time */
-function waitingTime(waitingTimes , serialNumber) {
-  // You have to write your code here
+console.log(" \nProblem-05: Predict Avarage Waiting Time\n");
+function waitingTime(waitingTimes, serialNumber) {
+ if(Array.isArray(waitingTimes) && typeof serialNumber ==='number'){
+  let sum = 0;
+  for (let i of waitingTimes) {
+    sum += i;
   }
+  let avg = Math.floor(sum / waitingTimes.length);
+  let peopleLeft = serialNumber - 1 - waitingTimes.length;
+  // console.log(peopleLeft, avg);
+
+  return avg * peopleLeft;
+ }else{
+ return "invalid input"
+ }
+}
+console.log(waitingTime([3, 5, 7, 11, 6], 10));
+console.log(waitingTime([13, 2, 6, 7, 10], 6));
+console.log(waitingTime([7, 8, 3, 4, 5], "9"));
